@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.message {
+  color: #FFFFFF; /* Adjust based on your design */
+  font-size: 24px; /* Adjust based on your design */
+  text-align: center;
+  position: absolute;
+  top: 50%; /* Adjust to position the name correctly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card {
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.draggableText {
+  color: black; /* Change text color to black */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  padding: 5px 10px;
+  white-space: pre-wrap; /* Preserves spaces and line breaks */
+  cursor: grab;
+}
+
+
+.nameInput {
+  position: fixed; /* Or absolute, depending on your layout */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust as needed */
+  z-index: 10; /* Keeps the textarea above other content */
+  opacity: 0.8; /* Slightly transparent to fit better with the design, adjust as needed */
+}
+
+
+
+.button {
+  position: absolute;
+  top: 80%; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.poster {
+  position: relative;
+  text-align: left;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 90px; /* Adjust as per your poster */
+  left: 50px; /* Adjust as per your poster */
+  color: rgb(0, 0, 0); /* Adjust based on your poster's color scheme */
+  background: rgba(0, 0, 0, 0.5); /* Optional: for better readability */
+  padding: 10px;
+}
